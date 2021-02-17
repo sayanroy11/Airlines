@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Admin Panel"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/logIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PBook"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/flightName"
+        android:layout_width="116dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:text="Hello "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/PBook"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="328dp"
+        android:text="To"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerfrom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/datef"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Date"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="240dp"
+        android:text="From"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/to"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerfrom"
+        android:layout_width="176dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerto" />
+
+    <Spinner
+        android:id="@+id/spinnerto"
+        android:layout_width="178dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PBook"
+        android:layout_width="118dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="612dp"
+        android:background="@color/design_default_color_primary"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="172dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="52dp"
+        android:focusable="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerfrom"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/colorAccent"
+        android:shadowColor="#57A7FF"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
